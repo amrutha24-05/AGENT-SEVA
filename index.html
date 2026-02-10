@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Agent Seva</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: #f1f3f6;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px;
+        background: #2874f0;
+        color: white;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+      .search input {
+        width: 420px;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+      }
+      .nav-right {
+        margin-left: auto;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .login {
+        background: white;
+        color: #2874f0;
+        border: none;
+        padding: 6px 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .nav-item {
+        cursor: pointer;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: space-around;
+        background: white;
+        padding: 12px 0;
+      }
+      .category {
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .slider {
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        margin-top: 10px;
+        border-radius: 6px;
+      }
+      .slides {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        animation: floatSlide 3s infinite ease-in-out;
+      }
+      .slides img {
+        width: 100vw;
+        height: 420px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      @keyframes floatSlide {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-8%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .section {
+        background: white;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 6px;
+      }
+      .section h2 {
+        margin-bottom: 15px;
+      }
+      .products {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .card {
+        width: 18%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+      .card img {
+        width: 100%;
+      }
+      .title {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .price {
+        color: green;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        background: #172337;
+        color: white;
+        padding: 30px 0;
+        margin-top: 20px;
+      }
+      .footer h4 {
+        margin-bottom: 10px;
+      }
+      .footer a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Agent Seva</a></div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search for services, products and more"
+        />
+      </div>
+      <div class="nav-right">
+        <a href="login.html"><button class="login">Login</button></a>
+        <a href="seller.html"><div class="nav-item">Become a Seller</div></a>
+        <a href="cart.html"><div class="nav-item">Cart</div></a>
+      </div>
+    </div>
+
+    <div class="categories">
+      <a href="products.html"><div class="category">Grocery</div></a>
+      <a href="products.html"><div class="category">Mobiles</div></a>
+      <a href="products.html"><div class="category">Fashion</div></a>
+      <a href="products.html"><div class="category">Electronics</div></a>
+      <a href="products.html"><div class="category">Home</div></a>
+      <a href="products.html"><div class="category">Appliances</div></a>
+      <a href="products.html"><div class="category">Travel</div></a>
+      <a href="products.html"><div class="category">Toys</div></a>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="images/image 2.png" />
+        <img src="images/3 Image.png" />
+        <img src="images/image 4.png" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>DAIRY PRODUCTS</h2>
+      <div class="products">
+        <a href="products.html" class="card">
+          <img src="images/milk.png" />
+          <div class="title">Milk</div>
+          <div class="price">₹25</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="images/curd.png" />
+          <div class="title">Curd</div>
+          <div class="price">₹34</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="images/butter milk.png" />
+          <div class="title">Butter milk</div>
+          <div class="price">₹12</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="images/paneer.png" />
+          <div class="title">Paneer</div>
+          <div class="price">₹100</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="images/cheese.png" />
+          <div class="title">cheese</div>
+          <div class="price">₹100</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><Grains>
+      <staples></staples></h2>
+      <div class="products">
+        <a href="products.html" class="card">
+          <img src="" />
+          <div class="title">Rice</div>
+          <div class="price">₹79,999</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="" />
+          <div class="title">wheat</div>
+          <div class="price">₹100</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src=""/>
+          <div class="title">oats</div>
+          <div class="price">₹100</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="" />
+          <div class="title">millets</div>
+          <div class="price">₹100</div>
+        </a>
+        <a href="products.html" class="card">
+          <img src="" />
+          <div class="title">flour</div>
+          <div class="price">₹100</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="mobiles.html">Mobiles</a>
+        <a href="fashion.html">Fashion</a>
+      </div>
+      <div>
+        <h4>About</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">About Agent Seva</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Payments</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </body>
+</html>
